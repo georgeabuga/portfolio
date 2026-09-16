@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- This line tells the browser: this is an HTML5 document. Every page starts with it. -->
+<html lang="en">
+<head>
+  <!-- Meta tags give the browser info about the page.
+       charset = character encoding, viewport = makes the page mobile-friendly -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The title shows in the browser tab -->
+  <title>Abuga — Software Engineering Student</title>
+  <!-- Our styles live in styles.css, so the HTML stays clean and readable -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER: your name and a one-line intro -->
+  <header>
+    <h1>Abuga</h1>
+    <p class="tagline">Software engineering student building small, useful things for the web.</p>
+  </header>
+
+  <!-- MAIN: the content of the page -->
+  <main>
+
+    <!-- ABOUT section -->
+    <section>
+      <h2>About</h2>
+      <p>
+        I'm Abuga, a career changer studying Software Engineering at WGU,
+        based in Charlotte, NC. I'm learning by building — this site is my
+        first project, written from scratch with plain HTML and CSS.
+      </p>
+    </section>
+
+    <!-- PROJECTS section.
+         To add a project: copy one <article class="card"> block below,
+         paste it inside <div class="projects">, and rewrite the text. -->
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <!-- PROJECT CARD 1 -->
+        <article class="card">
+          <h3>Python Lab Work</h3>
+          <p>Programming exercises from WGU's Intro to Python course (D335) — loops, functions, and problem solving.</p>
+          <p class="tech">Python</p>
+        </article>
+
+        <!-- PROJECT CARD 2 -->
+        <article class="card">
+          <h3>Utility Tools <span class="badge">Planned</span></h3>
+          <p>A collection of small browser tools (converters, calculators). Each one is a chance to practice testing and clean code.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </article>
+
+        <!-- PROJECT CARD 3: placeholder — delete it or rewrite it when you have a third project -->
+        <article class="card">
+          <h3>Coming soon</h3>
+          <p>Your next project goes here. Copy one of the cards above and rewrite the title and description.</p>
+          <p class="tech">TBD</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS section -->
+    <section>
+      <h2>Currently learning</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Charlotte, NC · <span id="year"></span> Abuga</p>
+    <!-- Add your links here later, for example:
+      <a href="https://github.com/your-username">GitHub</a>
+    -->
+  </footer>
+
+  <!-- Our JavaScript file. It runs after the page has loaded. -->
+  <script src="script.js"></script>
+</body>
+</html>

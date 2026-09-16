@@ -1,0 +1,110 @@
+/* ============================================================
+   styles.css — all the visual styling for the portfolio site.
+   The HTML handles STRUCTURE, this file handles LOOKS.
+   ============================================================ */
+
+/* A common reset: makes element sizing predictable everywhere */
+* { box-sizing: border-box; }
+
+body {
+  /* System font stack: clean look, no downloads needed */
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;      /* breathing room between lines */
+  color: #222;           /* near-black text */
+  background: #fafafa;  /* soft off-white page */
+  margin: 0;             /* remove the browser's default margin */
+}
+
+/* Center the content and cap its width so lines stay readable */
+header, main, footer {
+  max-width: 720px;
+  margin: 0 auto;        /* auto left/right margins = centered */
+  padding: 0 20px;       /* space on small screens */
+}
+
+/* ================= HEADER ================= */
+header {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;  /* thin divider line */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.tagline {
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  border-bottom: 2px solid #222;
+  display: inline-block;  /* underline only as wide as the text */
+  padding-bottom: 4px;
+}
+
+/* ================= PROJECT CARDS ================= */
+/* grid: cards sit side-by-side on wide screens, stack on phones */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;   /* rounded corners */
+  padding: 16px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.tech {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* little "Planned" label next to a project title */
+.badge {
+  font-size: 0.7rem;
+  background: #eef;
+  color: #446;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  list-style: none;   /* remove bullet points */
+  padding: 0;
+  display: flex;      /* lay items out in a row */
+  flex-wrap: wrap;    /* wrap to the next line on small screens */
+  gap: 8px;
+}
+
+.skills li {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;  /* pill shape */
+  padding: 4px 14px;
+  font-size: 0.9rem;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  padding: 30px 20px;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 1px solid #e5e5e5;
+}
